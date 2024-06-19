@@ -1,8 +1,7 @@
 # Kubectl Cheatsheet
 
-```sh
+
 # Cluster Info
-```
 ```sh
 kubectl cluster-info
 ```
@@ -13,9 +12,9 @@ kubectl config view
 kubectl get nodes
 ```
 
-```sh
+
 # Working with Contexts
-```
+
 ```sh
 kubectl config get-contexts
 ```
@@ -26,9 +25,8 @@ kubectl config current-context
 kubectl config use-context <context-name>
 ```
 
-```sh
 # Get Resources
-```
+
 ```sh
 kubectl get all
 ```
@@ -48,9 +46,9 @@ kubectl get nodes
 kubectl get namespaces
 ```
 
-```sh
+
 # Describe Resources
-```
+
 ```sh
 kubectl describe pod <pod-name>
 ```
@@ -61,9 +59,8 @@ kubectl describe service <service-name>
 kubectl describe deployment <deployment-name>
 ```
 
-```sh
 # Creating and Deleting Resources
-```
+
 ```sh
 kubectl create -f <file.yaml>
 ```
@@ -79,10 +76,7 @@ kubectl delete service <service-name>
 ```sh
 kubectl delete deployment <deployment-name>
 ```
-
-```sh
 # Get Logs
-```
 ```sh
 kubectl logs <pod-name>
 ```
